@@ -1,0 +1,18 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'inventory/style.css' %}">
+
+<div class = "navbar">
+    <a href={% url 'home' %}>
+        <img src = "{% static 'beans-and-bookmarks.jpeg' %}" class="logo">
+    </a>
+    <form action="{% url 'search_results' %}" class="search-form">
+        <input name = "q" type="text" placeholder="Search" class="search-bar">
+        <button type="submit" class="submit-button"><img src="{% static 'search.png' %}" id="search-img"></button>
+    </form>
+</div>
+<h1>Home Page</h1>
+
+<img src="{% static 'exterior-img.jpeg' %}" id="ext-img">
+
+
